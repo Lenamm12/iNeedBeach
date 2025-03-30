@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>I need beach</title>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script type="module" src="index.js"></script>
+
+</head>
+
+<body>
+    <script src="index.js"></script>
+    <h1>I need beach</h1>
+    <h2>Finde den besten Strand in deiner Nähe</h2>
+
+    <div>
+        <input type="text" id="search" placeholder="Standort eingeben"> oder
+        <button id="get-location">Standort ermitteln</button>
+        <p id="standort"></p>
+    </div>
+    <div>
+        <select id="filter-select">
+            <option value="50">50 km</option>
+            <option value="100">100 km</option>
+            <option value="200">200 km</option>
+            <option value="500">500 km</option>
+            <option value="1000">1000 km</option>
+        </select>
+        <button id="show-beaches">Strände anzeigen</button>
+    </div>
+
+
+    <div id="map-container">
+        <div id="side">
+            <!-- <button id="filter">Filtern</button> -->
+            <div id="beach-list"></div>
+        </div>
+
+        <div id="map"></div>
+    </div>
+
+</body>
+
+</html>
